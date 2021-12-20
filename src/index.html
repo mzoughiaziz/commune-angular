@@ -2,12 +2,43 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Commune</title>
+  <title> Commune</title>
   <base href="/">
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
-</head>
+  <!-- UIkit -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/css/uikit.min.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/js/uikit.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/js/uikit-icons.min.js"></script>
+
+  </head>
 <body>
+
   <app-root></app-root>
 </body>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDY1KLumabdRwUHGZaQw3jR5-QNC1E9T_A",
+    authDomain: "commune-angular-firebase.firebaseapp.com",
+    databaseURL: "https://commune-angular-firebase.firebaseio.com",
+    projectId: "commune-angular-firebase",
+    storageBucket: "commune-angular-firebase.appspot.com",
+    messagingSenderId: "772744847777",
+    appId: "1:772744847777:web:b1e17c27571f31eada6be0",
+    measurementId: "G-E5WVPPGQRK"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
 </html>

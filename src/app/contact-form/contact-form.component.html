@@ -1,0 +1,51 @@
+<div class="uk-padding">
+<div class="uk-card uk-card-default uk-card-body">
+<form>
+    <fieldset class="uk-fieldset">
+
+        <legend class="uk-legend"  style="background-color: gainsboro ; ">Vos Réclamations : </legend>
+
+        <div class="uk-margin">
+            Nom & Prénom :  <input class="uk-input" type="text" placeholder="Foulen ben Foulen" name="data.name" [(ngModel)]="data.name">
+        </div>
+
+        <div class="uk-margin">
+            Email :  <input class="uk-input" type="email" placeholder="exemple@email.com" name="data.email" [(ngModel)]="data.email">
+        </div>
+
+        <div class="uk-margin">
+            Numéro CIN :  <input class="uk-input" type="number" placeholder="CIN" name="data.cin" [(ngModel)]="data.cin">
+        </div>
+
+        <div class="uk-margin">
+            Adresse :  <input class="uk-input" type="text" placeholder="Chatt mariem , Sousse 4042" name="data.adresse" [(ngModel)]="data.adresse">
+        </div>
+
+        <div class="uk-margin">
+            Type de Réclamations :
+            <select class="uk-select" id="data.recla" [(ngModel)]="data.recla">
+                <option> Propriété </option>
+                <option>Eclairage public</option>
+                <option>Constructions anarchique</option>
+                <option>Autre</option> 
+            </select>
+        </div>
+
+        <div class="uk-margin">
+            Sujet de Réclamations:
+            <textarea class="uk-textarea" rows="5" placeholder="Sujet de Réclamations" name="data.sujet" [(ngModel)]="data.sujet"></textarea>
+        </div>
+        <div class="uk-margin" uk-margin >
+            <div uk-form-custom="target: true">
+                Ajouter une piéce jointe :  
+                <input type="file">
+                <input class="uk-input uk-form-width-medium" type="text" placeholder="Choisir une piéce" disabled name="data.choisi" [(ngModel)]="data.choisi">
+            </div>
+            <button class="uk-button uk-button-default">Choisir</button>
+        </div>
+        <button class="uk-button uk-button-primary" (click)="insertReclamation()">Envoyer</button>
+
+    </fieldset>
+</form>
+</div>
+</div>

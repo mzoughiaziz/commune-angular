@@ -1,0 +1,25 @@
+
+<div class="uk-padding"><h2 class="uk-heading-divider">Les Réclamations Récus</h2>
+    <table class="uk-table uk-table-divider">
+        <thead>
+            <tr>
+                <th>Nom & Prénom</th>
+                <th>Email</th>
+                <th>CIN</th>
+                <th>Adresse</th>
+                <th>type de Réclamation</th>
+                <th>Sujet de Réclamation</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of itemArray">
+                <td>{{item.name}}</td>
+                <td>{{item.email}}</td>
+                <td>{{item.cin}}</td>
+                <td>{{item.adresse}}</td>
+                <td>{{item.recla}}</td>
+                <td>{{item.sujet}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
